@@ -1,3 +1,75 @@
+footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
 tr.Number1 {
     color: gold;
+}
+
+.table-hover>tbody>tr.Number1:hover {
+    color: rgb(238, 200, 0);
+}
+
+#Hot100 {
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.BillboardFooter {
+    width: 70%;
+    margin: auto;
+}
+
+.FooterContainer {
+    display: grid;
+    grid-template-columns: repeat(auto, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+}
+
+.FooterLogo {
+    height: 100px;
+    width: auto;
+    grid-column: 2;
+    grid-row: 1 / span 4;
+    justify-self: end;
+    align-self: end;
+}
+
+@media only screen and (max-width: 1000px) {
+    #Hot100 {
+        width: 700px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .BillboardFooter {
+        width: 700px;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #Hot100 {
+        width: 100%;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .BillboardFooter {
+        width: 100%;
+        margin: auto;
+    }
+
+    .FooterLogo {
+        height: auto;
+        width: 100px;
+        grid-column: 1;
+        grid-row: 5;
+    }
 }
