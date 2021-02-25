@@ -9,6 +9,14 @@
 video {
     display: block;
     margin: 0 auto;
+    min-width: 600px;
+    min-height: calc(min-width/2);
+}
+
+@media only screen and (max-width: 480px) {
+    video {
+        width: 80%;
+    }
 }
 
 video:focus {
