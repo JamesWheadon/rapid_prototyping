@@ -11,7 +11,8 @@
     <title>Billboard Hot 100</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
         <div class="container-fluid">
           <img src="/logo.png" style="width:120px;height:80%;">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,16 +33,20 @@
                 <a class="nav-link text-white" href="#">PHOTOS</a>
               </li>
             </ul>
-            <span class="navbar-text text-white">
-              Navbar text with an inline element
-            </span>
           </div>
         </div>
       </nav>
+      <div class="p-3 mb-2 bg-dark text-white">
       <p>
         This is a list of Billboard magazine's Top Hot 100 songs of 1981. The Top 100, as revealed in the year-end edition of Billboard dated December 26, 1981, is based on Hot 100 charts from the issue dates of November 1, 1980 through October 31, 1981. Any song that reached number 1 in the Billboard Hot 100 is shown in gold.
       </p>
       <table id="Hot100" class="table table-hover table-dark">
+      <video width="60%" height="40%" controls>
+        <source src="/B Young.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
+      <br>
+      <table class="table table-hover table-dark">
         <tr>
             <th scope="col">No.</th>
             <th scope="col">Title</th>
@@ -560,5 +565,6 @@
               </div>
           </section>
       </footer>
+    </div>
 </body>
 </html>
