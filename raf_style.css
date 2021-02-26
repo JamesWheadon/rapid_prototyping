@@ -9,6 +9,15 @@
 video {
     display: block;
     margin: 0 auto;
+    width: 60%;
+    height: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    video {
+        width: 80%;
+        height: 60%;
+    }
 }
 
 video:focus {
@@ -29,8 +38,4 @@ h1 {
 
 img {
     margin-top: 5px;
-}
-
-nav {
-    /* border-bottom: solid rgba(255, 255, 255, 0.1) 1px; */
 }
